@@ -1,0 +1,103 @@
+body{
+    background-image: linear-gradient(to right bottom, black,rgb(82, 80, 80));
+    font-family: system-ui;
+    font-weight: bold;
+    color: white;
+}
+
+img{
+    border-radius: 30px;
+    border: 4px white solid;
+}
+
+button{
+ background-color: grey;
+ color: black;
+ border: none;
+ font-size: larger;
+ cursor: pointer;
+ border-radius: 20px;
+ margin-bottom: 5px;
+}
+
+button:hover{
+    background-color: white;
+    color: grey;
+    border: none;
+    font-size: larger;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-bottom: 5px;
+    border: black 3px solid;
+   }
+
+a{
+    text-decoration:  underline;
+    font-weight: bolder;
+    color: black;
+}
+
+.imageeffect{
+    animation-name: image;
+    animation-duration: 2.5s;
+    animation-iteration-count: 1;
+}
+
+.texteffect{
+    animation-name: TCC;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+
+#opacity{
+    animation-name: opa;
+    animation-duration: 6s;
+    animation-iteration-count: 1;
+}
+
+#animationid{
+    animation-name: animationid;
+    animation-duration: 6s;
+    animation-iteration-count: 1;
+}
+
+@keyframes image{
+    from{
+        width: 100px;
+        height: 100px;
+    }
+
+    to{
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@keyframes TCC {
+    from{
+        color: black;
+    }
+
+    to{
+        color: white;
+    }
+} 
+
+@keyframes opa{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes animationid{
+    from{color: black;}
+    to{color: white;}
+}
+
+li{
+    list-style: inside upper-roman;
+}
